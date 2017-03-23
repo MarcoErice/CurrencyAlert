@@ -9,11 +9,11 @@
 <head>
     <title></title>
 
-    <script src="../Scripts/jquery-3.1.1.min.js"></script>
-    <script src="../Scripts/Chart.min.js"></script>
-    <script src="../Scripts/moment.min.js"></script>
-    <script src="../Scripts/moment-with-locales.min.js"></script>
-    <script src="../Scripts/jmoney.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/Chart.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jmoney.min.js"></script>
     <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.js"></script>

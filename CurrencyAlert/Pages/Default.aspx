@@ -5,11 +5,11 @@
 <%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 
 <asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
-    <script src="../Scripts/jquery-3.1.1.min.js"></script>
-    <script src="../Scripts/Chart.min.js"></script>
-    <script src="../Scripts/moment.min.js"></script>
-    <script src="../Scripts/moment-with-locales.min.js"></script>
-    <script src="../Scripts/jmoney.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/Chart.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jmoney.min.js"></script>
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
     <meta name="WebPartPageExpansion" content="full" />
 
