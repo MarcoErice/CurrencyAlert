@@ -1,31 +1,23 @@
 ﻿'use strict';
 
-ExecuteOrDelayUntilScriptLoaded(initializePage, "sp.js");
+// set endpoint and your access key
+endpoint = 'live'
+access_key = 'c96635befddf0415dd01439f17050368';
 
-function initializePage()
-{
-    var context = SP.ClientContext.get_current();
-    var user = context.get_web().get_currentUser();
+// get the most recent exchange rates via the "live" endpoint:
+$.ajax({
+    url: 'http://apilayer.net/api/' + endpoint + '?access_key=' + access_key,
+    dataType: 'jsonp',
+    success: function (json) {
 
-    // This code runs when the DOM is ready and creates a context object which is needed to use the SharePoint object model
-    $(document).ready(function () {
-        getUserName();
-    });
+        // exchange rata data is stored in json.quotes
+        alert(json.quotes.USDGBP);
 
-    // This function prepares, loads, and then executes a SharePoint query to get the current users information
-    function getUserName() {
-        context.load(user);
-        context.executeQueryAsync(onGetUserNameSuccess, onGetUserNameFail);
+        // source currency is stored in json.source
+        alert(json.source);
+
+        // timestamp can be accessed in json.timestamp
+        alert(json.timestamp);
+
     }
-
-    // This function is executed if the above call is successful
-    // It replaces the contents of the 'message' element with the user name
-    function onGetUserNameSuccess() {
-        $('#message').text('Hello ' + user.get_title());
-    }
-
-    // This function is executed if the above call fails
-    function onGetUserNameFail(sender, args) {
-        alert('Failed to get user name. Error:' + args.get_message());
-    }
-}
+});
