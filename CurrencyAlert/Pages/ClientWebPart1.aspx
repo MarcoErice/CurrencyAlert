@@ -10,40 +10,53 @@
     <title></title>
 
     <script src="../Scripts/jquery-3.1.1.min.js"></script>
+	<script src="../Scripts/bootstrap.min.js"></script>
     <script src="../Scripts/Chart.min.js"></script>
     <script src="../Scripts/moment.min.js"></script>
     <script src="../Scripts/moment-with-locales.min.js"></script>
     <script src="../Scripts/jmoney.min.js"></script>
+	<script src="../Scripts/App.js"></script>
+
     <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.js"></script>
 
-    <script type="text/javascript">
-        // Set the style of the client web part page to be consistent with the host web.
-        (function () {
-            'use strict';
+	<link href="../Content/bootstrap.min.css" rel="stylesheet" />
+	<link href="../Content/App.css" rel="stylesheet" />
 
-            var hostUrl = '';
-            var link = document.createElement('link');
-            link.setAttribute('rel', 'stylesheet');
-            if (document.URL.indexOf('?') != -1) {
-                var params = document.URL.split('?')[1].split('&');
-                for (var i = 0; i < params.length; i++) {
-                    var p = decodeURIComponent(params[i]);
-                    if (/^SPHostUrl=/i.test(p)) {
-                        hostUrl = p.split('=')[1];
-                        link.setAttribute('href', hostUrl + '/_layouts/15/defaultcss.ashx');
-                        break;
-                    }
-                }
-            }
-            if (hostUrl == '') {
-                link.setAttribute('href', '/_layouts/15/1033/styles/themable/corev15.css');
-            }
-            document.head.appendChild(link);
-        })();
-    </script>
 </head>
 <body>
+	<div class="container">
+		<div class="jumbotron col-md-6">
+			<h3 class="text-center">Today's XchangeRate </h3>
+			
+			<!--moment data will be inserted in this section-->
+			<div class="panel panel-success text-center">
+				<div class="panel-heading" id="displayMoment">
+					<div id ="date"></div>
+					<div id ="day"></div>
+					<div id="time"></div>
+				</div>
+			</div> 
+
+			<!--currency converter will be displayed here-->
+			
+			<div class="row">	
+				<div class= "col-sm-6 text-center" id="xChange1">
+					<div class="well">USD / EURO</div>
+				</div>
+				<div class="col-sm-6 text-center" id="xChange2">
+					<div class="well">USD / SEK</div>
+				</div>
+				</div>			    
+			
+			<!--news feed-->
+			<div class="panel panel-success text-center">
+				<div class="panel-heading" id="newsFeed">News feed</div>
+				</div>
+			
+		</div>
+	</div>
+
 </body>
 </html>
