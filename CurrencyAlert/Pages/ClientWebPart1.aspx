@@ -52,9 +52,9 @@
 			
 			<!--news feed-->
 			<div class="panel panel-success text-center">
-				<div class="panel-heading" id="newsFeed">News feed</div>
+				<div class="panel-heading" id="newsFeed"></div>
 				</div>
-			
+			<div id="errorHandler"></div>
 		</div>
 	</div>
 
