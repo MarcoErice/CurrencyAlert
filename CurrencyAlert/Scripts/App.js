@@ -30,11 +30,15 @@ $("#day").html(currentDay);
             timeout: 3000,
 
 
-            success: function (data) {
+            success: function (data)
+                   
+            {
+                for (var i = 0; i < 3; i++){
+                    var currencyNews = data.articles[i].title;
+                    var currencyLink = data.articles[i].url;
 
-                var currencyNews = data.articles[0].title;
-                $('#newsFeed').html(currencyNews);
-                                
+                    $('#newsFeed').append("<a href=" + currencyLink + " " + "target='_blank'" + ">" + currencyNews + "</a>" + "<br>");
+                };
                 console.log(currencyNews);
 
 

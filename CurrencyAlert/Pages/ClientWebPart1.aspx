@@ -52,7 +52,7 @@
 			
 			<!--news feed-->
 			<div class="panel panel-success text-center">
-				<div class="panel-heading" id="newsFeed"></div>
+				<div class="panel-heading" id="newsFeed">LATEST NEWS:<br /></div>
 				</div>
 			<div id="errorHandler"></div>
 		</div>

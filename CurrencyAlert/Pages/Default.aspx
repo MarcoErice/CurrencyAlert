@@ -25,7 +25,8 @@
 
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
-			<div class="panel panel-success text-center">
+
+	<div class="panel panel-success text-center">
 				<div class="panel-heading" id="newsFeed"></div>
 				</div>
 			<div id="errorHandler"></div>
