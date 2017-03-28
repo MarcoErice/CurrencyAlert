@@ -54,15 +54,14 @@ $(document).ready(function () {
     var urlxc = 'https://openexchangerates.org/api/latest.json?app_id=';
     var apiKeyxc = '288ae5abeb444453bd3d9ea1a453ba5e';
 
-
     jQuery.ajax({
         url: urlxc + apiKeyxc,
         type: 'GET',
         dataType: 'json',
         timeout: 3000,
-
+                
         success: function (rate) {
-            
+
                 var rateUSD = rate.rates.USD;
                 var rateSEK = rate.rates.SEK;
                 var rateEUR = rate.rates.EUR;
