@@ -18,9 +18,9 @@
 	<script src="../Scripts/App.js"></script>
     <link href="../Content/flag-icon.min.css" rel="stylesheet" />
 
-    <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
+    <%--<script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
-    <script type="text/javascript" src="/_layouts/15/sp.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.js"></script>--%>
 
 	<link href="../Content/bootstrap.min.css" rel="stylesheet" />
 	<link href="../Content/App.css" rel="stylesheet" />
