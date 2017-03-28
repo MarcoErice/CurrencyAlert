@@ -6,7 +6,7 @@ access_key = 'c96635befddf0415dd01439f17050368';
 
 // get the most recent exchange rates via the "live" endpoint:
 $.ajax({
-    url: 'http://apilayer.net/api/' + endpoint + '?access_key=' + access_key,
+    url: 'https://apilayer.net/api/' + endpoint + '?access_key=' + access_key,
     dataType: 'jsonp',
     success: function (json) {
 
