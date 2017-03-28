@@ -14,8 +14,9 @@
     <script src="../Scripts/Chart.min.js"></script>
     <script src="../Scripts/moment.min.js"></script>
     <script src="../Scripts/moment-with-locales.min.js"></script>
-    <script src="../Scripts/jmoney.min.js"></script>
+    <script src="http://openexchangerates.github.io/money.js/money.min.js"></script>
 	<script src="../Scripts/App.js"></script>
+    <link href="../Content/flag-icon.min.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
@@ -23,25 +24,13 @@
 
 	<link href="../Content/bootstrap.min.css" rel="stylesheet" />
 	<link href="../Content/App.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 	<div class="container">
-					
 		<div class="jumbotron col-md-6">
-			<div class="row"> 
-				<a id= "default_page_link" target="_blank" data-toggle="tooltip" title="Go to Immersive webpart">
-					<span class="badge badge-default pull-right">
-					Details
-						</span>
-				</a>
-			<%--<a href="Default.aspx" >
-					 Details</span>
-				</a>--%>
-			</div> <br />
-				<h3 class="text-center">Today's XchangeRate </h3>
-						
+			<h3 class="text-center">Today's XchangeRate </h3>
+			
 			<!--moment data will be inserted in this section-->
 			<div class="panel panel-success text-center">
 				<div class="panel-heading" id="displayMoment">
@@ -55,12 +44,12 @@
 			
 			<div class="row">	
 				<div class= "col-sm-6 text-center" id="xChange1">
-					<div class="well" id="usdeur"></div>
-				</div>
+                    <div class="well" id="clientusdeur"></div>
+                    </div>
 				<div class="col-sm-6 text-center" id="xChange2">
-					<div class="well" id="usdsek"></div>
-				</div>
-			</div>			    
+                    <div class="well" id="clientusdsek"></div>
+                    				</div>
+				</div>			    
 			
 			<!--news feed-->
 			<div class="panel panel-success text-center">

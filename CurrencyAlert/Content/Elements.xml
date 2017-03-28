@@ -4,5 +4,6 @@
     <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
     <File Path="Content\bootstrap.min.css.map" Url="Content/bootstrap.min.css.map" ReplaceContent="TRUE" />
     <File Path="Content\bootstrap.min.css" Url="Content/bootstrap.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\flag-icon.min.css" Url="Content/flag-icon.min.css" ReplaceContent="TRUE" />
   </Module>
 </Elements>
