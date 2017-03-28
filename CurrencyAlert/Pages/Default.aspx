@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../Scripts/Chart.min.js"></script>
     <script type="text/javascript" src="../Scripts/moment.min.js"></script>
     <script type="text/javascript" src="../Scripts/moment-with-locales.min.js"></script>
-    <script type="text/javascript" src="../Scripts/jmoney.min.js"></script>
+    <script type="text/javascript" src="http://openexchangerates.github.io/money.js/money.min.js"></script>
      <link href="../Content/flag-icon.min.css" rel="stylesheet" />
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
     <meta name="WebPartPageExpansion" content="full" />
@@ -21,15 +21,120 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-    Page Title
+    
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
-    <%-- BELOW DIVS IS FOR TESTING ONLY --%>
-	<div class="panel panel-success text-center">
-				<div class="panel-heading" id="newsFeed"></div>
-				</div>
-			<div id="errorHandler"></div>
+<div class="container">
+<div class="row">
+	<table class="table table-bordered table-hover">
+		<thead>
+			<th>#</th>
+			<th class="text-center">USD <span class="flag-icon flag-icon-us flag-icon-squared"></span></th>
+			<th class="text-center">EUR <span class="flag-icon flag-icon-eu flag-icon-squared"></span></th>
+			<th class="text-center">GBP <span class="flag-icon flag-icon-gb flag-icon-squared"></span></th>
+			<th class="text-center">SEK <span class="flag-icon flag-icon-se flag-icon-squared"></span></th>
+			<th class="text-center">JPY <span class="flag-icon flag-icon-jp flag-icon-squared"></span></th>
+			<th class="text-center">AUD <span class="flag-icon flag-icon-au flag-icon-squared"></span></th>
+			<th class="text-center">NOK <span class="flag-icon flag-icon-no flag-icon-squared"></span></th>
+			<th class="text-center">DKK <span class="flag-icon flag-icon-dk flag-icon-squared"></span></th>
+		</thead>
+<tbody class="text-center">
+<tr>
+	<th scope="row">1 USD <span class="flag-icon flag-icon-us flag-icon-squared"></span></th>
+	<td> 1</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+	
+	<tr>
+		<th scope="row">1 EUR <span class="flag-icon flag-icon-eu flag-icon-squared"></span></th>
+	<td></td>
+	<td>1</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>
+	<tr>
+		<th scope="row">1 GBP <span class="flag-icon flag-icon-gb flag-icon-squared"></span></th>
+	<td> </td>
+	<td></td>
+	<td>1</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>
+	<tr>
+		<th scope="row">1 SEK <span class="flag-icon flag-icon-se flag-icon-squared"></span></th>
+	<td> </td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>
+	<tr>
+		<th scope="row">1 JPY <span class="flag-icon flag-icon-jp flag-icon-squared"></span></th>
+	<td> </td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	</tr>
+	<tr>
+		<th scope="row">1 AUD <span class="flag-icon flag-icon-au flag-icon-squared"></span></th>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td></td>
+	<td></td>
+	</tr>
+	<tr>
+		<th scope="row">1 NOK <span class="flag-icon flag-icon-no flag-icon-squared"></span></th>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td></td>
+	</tr>
+	<tr>
+		<th scope="row">1 DKK <span class="flag-icon flag-icon-dk flag-icon-squared"></span></th>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	</tr>
+</tbody>
+	</table>
+</div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 
 </asp:Content>
