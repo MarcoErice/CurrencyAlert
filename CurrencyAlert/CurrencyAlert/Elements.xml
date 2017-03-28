@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ClientWebPart Name="ClientWebPart1" Title="ClientWebPart1 Title" Description="ClientWebPart1 Description" DefaultWidth="300" DefaultHeight="200">
+  <ClientWebPart Name="CurrencyAlert" Title="CurrencyAlert" Description="CurrencyAlert" DefaultWidth="800" DefaultHeight="600">
 
     <!-- Content element identifies the location of the page that will render inside the client web part
          Properties are referenced on the query string using the pattern _propertyName_
