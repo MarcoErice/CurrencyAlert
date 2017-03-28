@@ -23,13 +23,25 @@
 
 	<link href="../Content/bootstrap.min.css" rel="stylesheet" />
 	<link href="../Content/App.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 	<div class="container">
+					
 		<div class="jumbotron col-md-6">
-			<h3 class="text-center">Today's XchangeRate </h3>
-			
+			<div class="row"> 
+				<a id= "default_page_link" target="_blank" data-toggle="tooltip" title="Go to Immersive webpart">
+					<span class="badge badge-default pull-right">
+					Details
+						</span>
+				</a>
+			<%--<a href="Default.aspx" >
+					 Details</span>
+				</a>--%>
+			</div> <br />
+				<h3 class="text-center">Today's XchangeRate </h3>
+						
 			<!--moment data will be inserted in this section-->
 			<div class="panel panel-success text-center">
 				<div class="panel-heading" id="displayMoment">
@@ -48,7 +60,7 @@
 				<div class="col-sm-6 text-center" id="xChange2">
 					<div class="well" id="usdsek"></div>
 				</div>
-				</div>			    
+			</div>			    
 			
 			<!--news feed-->
 			<div class="panel panel-success text-center">

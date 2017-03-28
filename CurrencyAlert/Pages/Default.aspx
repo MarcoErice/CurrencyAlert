@@ -30,5 +30,9 @@
 				<div class="panel-heading" id="newsFeed"></div>
 				</div>
 			<div id="errorHandler"></div>
-
+	<a id= "default_page_link_webapp" target="_blank" data-toggle="tooltip" title="Go to App part">
+					<span class="badge badge-default pull-right">
+					Details
+						</span>
+				</a>
 </asp:Content>
