@@ -29,20 +29,18 @@ $("#day").html(currentDay);
             dataType: 'json',
             timeout: 3000,
 
-
             success: function (data)
                    
             {
                 for (var i = 0; i < 3; i++){
                     var currencyNews = data.articles[i].title;
                     var currencyLink = data.articles[i].url;
-
-                    $('#newsFeed').append("<a href=" + currencyLink + " " + "target='_blank'" + ">" + currencyNews + "</a>" + "<br>");
+                    var currencySource = data.source;
+                    
+                    $('#newsFeed').append("<a href=" + currencyLink + " " + "target='_blank'" + ">" + currencyNews + "</a>" +" - " + currencySource + "<br>");
                 };
                 console.log(currencyNews);
-
-
-            },
+                },
             error: function () {
                 $('.errorHandler').html('check api key');
                 }
