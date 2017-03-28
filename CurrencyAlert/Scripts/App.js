@@ -10,44 +10,68 @@ var currentDay = moment().format('dddd');
 $("#date").html(currentDate);
 $("#day").html(currentDay);
 
-	function clock() {
-		var currentClock = moment().format("HH:mm:ss");
-		$("#time").html(currentClock);
-}
-	clock();
-	setInterval(clock, 1000);
+    // This function is executed if the above call fails
+    function onGetUserNameFail(sender, args) {
+        alert('Failed to get user name. Error:' + args.get_message());
+    }
+})
+
+
+
+    $(document).ready(function () {
+        var url = 'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=';
+        var apiKey = '63e789e202054f3e95c86a32635a28d2';
+        
+
+        jQuery.ajax({
+            url: url + apiKey,
+            type: 'GET',
+            dataType: 'json',
+            timeout: 3000,
+
+            success: function (data)
+                   
+            {
+                for (var i = 0; i < 3; i++){
+                    var currencyNews = data.articles[i].title;
+                    var currencyLink = data.articles[i].url;
+                    var currencySource = data.source;
+                    
+                    $('#newsFeed').append("<a href=" + currencyLink + " " + "target='_blank'" + ">" + currencyNews + "</a>" +" - " + currencySource + "<br>");
+                };
+                console.log(currencyNews);
+                },
+            error: function () {
+                $('.errorHandler').html('check api key');
+                }
+        });
 });
 
-// Money conversion
 
-
-// News Feed
 $(document).ready(function () {
+    var urlxc = 'https://openexchangerates.org/api/latest.json?app_id=';
+    var apiKeyxc = '288ae5abeb444453bd3d9ea1a453ba5e';
 
-	$.ajax({
-		async: true,
-		url: "https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffeeds.idg.se%2FComputerSweden20SenasteNyheter",
-		method: "GET",
-		headers: {
-			"Accept": "application/json;odata=verbose"
-		}
-	})
 
-		.done(successFunction)
-		.fail(failFunction)
+    jQuery.ajax({
+        url: urlxc + apiKeyxc,
+        type: 'GET',
+        dataType: 'json',
+        timeout: 3000,
 
-	function successFunction(data) {
-		var myData = [];
-		for (var i = 0; i < 5; ++i) {
-			var title = data.items[i].title;
-			var datum = data.items[i].pubDate;
-			var link = data.items[i].link;
+        success: function (rate) {
+            
+                var rateUSD = rate.rates.USD;
+                var rateSEK = rate.rates.SEK;
+                var rateEUR = rate.rates.EUR;
 
-			myData.push("<p>" + "<a href=" + link + " " + "target='_blank'" + ">" + title + "</a>" + "</p>" + datum);
-			$("newsFeed").html(myData.join(''));
-		}
-		function failFunction(request, textStatus, errorThrown) {
-			console.log('Funkar ej.. ');
-		}
-	}
+                $('#usdeur').html(rateUSD + " / " + rateEUR);
+                $('#usdsek').html(rateUSD + " / " + rateSEK);
+
+                console.log(rateUSD + rateSEK + rateEUR);
+        },
+        error: function () {
+            $('.errorHandler').html('check api key');
+        }
+    });
 });

@@ -43,19 +43,18 @@
 			
 			<div class="row">	
 				<div class= "col-sm-6 text-center" id="xChange1">
-					<div class="well" id="usdEuro">USD/ EURO</div>
+					<div class="well" id="usdeur"></div>
 				</div>
 				<div class="col-sm-6 text-center" id="xChange2">
-					<div class="well" id="usdSek">USD/ SEK</div>
+					<div class="well" id="usdsek"></div>
 				</div>
 				</div>			    
 			
 			<!--news feed-->
 			<div class="panel panel-success text-center">
-				<div class="panel-heading" id="newsFeed">News feed</div>
-				<div class="panel-body" id="newsFeed"> </div>
+				<div class="panel-heading" id="newsFeed">LATEST NEWS:<br /></div>
 				</div>
-			
+			<div id="errorHandler"></div>
 		</div>
 	</div>
 
