@@ -16,6 +16,7 @@
     <script src="../Scripts/moment-with-locales.min.js"></script>
     <script src="../Scripts/jmoney.min.js"></script>
 	<script src="../Scripts/App.js"></script>
+    <link href="../Content/flag-icon.min.css" rel="stylesheet" />
 
     <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
@@ -43,11 +44,11 @@
 			
 			<div class="row">	
 				<div class= "col-sm-6 text-center" id="xChange1">
-					<div class="well" id="usdeur"></div>
-				</div>
+                    <div class="well" id="usdeur"></div>
+                    </div>
 				<div class="col-sm-6 text-center" id="xChange2">
-					<div class="well" id="usdsek"></div>
-				</div>
+                    <div class="well" id="usdsek"></div>
+                    				</div>
 				</div>			    
 			
 			<!--news feed-->

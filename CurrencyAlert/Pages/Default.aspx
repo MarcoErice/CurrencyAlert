@@ -10,6 +10,7 @@
     <script type="text/javascript" src="../Scripts/moment.min.js"></script>
     <script type="text/javascript" src="../Scripts/moment-with-locales.min.js"></script>
     <script type="text/javascript" src="../Scripts/jmoney.min.js"></script>
+     <link href="../Content/flag-icon.min.css" rel="stylesheet" />
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
     <meta name="WebPartPageExpansion" content="full" />
 

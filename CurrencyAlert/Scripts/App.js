@@ -19,7 +19,7 @@ $("#day").html(currentDay);
 
 
     $(document).ready(function () {
-        var url = 'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=';
+        var url = 'https://newsapi.org/v1/articles?source=financial-times&sortBy=top&apiKey=';
         var apiKey = '63e789e202054f3e95c86a32635a28d2';
         
 
@@ -37,7 +37,9 @@ $("#day").html(currentDay);
                     var currencyLink = data.articles[i].url;
                     var currencySource = data.source;
                     
-                    $('#newsFeed').append("<a href=" + currencyLink + " " + "target='_blank'" + ">" + currencyNews + "</a>" +" - " + currencySource + "<br>");
+
+                    $('#newsFeed').append("<a href=" + currencyLink + " " + "target='_blank'" + ">" + currencyNews + "</a>" + " - " + currencySource + "<br>");
+                    
                 };
                 console.log(currencyNews);
                 },
@@ -64,9 +66,16 @@ $(document).ready(function () {
                 var rateUSD = rate.rates.USD;
                 var rateSEK = rate.rates.SEK;
                 var rateEUR = rate.rates.EUR;
+                var sekIcon = '<span class="flag-icon flag-icon-se"></span>';
+                var usdIcon = '<span class="flag-icon flag-icon-us"></span>';
+                var eurIcon = '<span class="flag-icon flag-icon-eu"></span>';
 
                 $('#usdeur').html(rateUSD + " / " + rateEUR);
                 $('#usdsek').html(rateUSD + " / " + rateSEK);
+                $('#usdeur').prepend(usdIcon + " USD ");
+                $('#usdeur').append(" " + eurIcon + " EUR");
+                $('#usdsek').prepend(usdIcon + " USD ");
+                $('#usdsek').append(" " + sekIcon + " SEK");
 
                 console.log(rateUSD + rateSEK + rateEUR);
         },
