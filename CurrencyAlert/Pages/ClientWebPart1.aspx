@@ -44,10 +44,10 @@
 			
 			<div class="row">	
 				<div class= "col-sm-6 text-center" id="xChange1">
-                    <div class="well" id="usdeur"></div>
+                    <div class="well" id="clientusdeur"></div>
                     </div>
 				<div class="col-sm-6 text-center" id="xChange2">
-                    <div class="well" id="usdsek"></div>
+                    <div class="well" id="clientusdsek"></div>
                     				</div>
 				</div>			    
 			

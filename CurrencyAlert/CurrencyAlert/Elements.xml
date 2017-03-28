@@ -5,11 +5,46 @@
     <!-- Content element identifies the location of the page that will render inside the client web part
          Properties are referenced on the query string using the pattern _propertyName_
          Example: Src="~appWebUrl/Pages/ClientWebPart1.aspx?Property1=_property1_" -->
-    <Content Type="html" Src="~appWebUrl/Pages/ClientWebPart1.aspx?{StandardTokens}" />
+    <Content Type="html" Src="~appWebUrl/Pages/ClientWebPart1.aspx?{StandardTokens}&amp;defaultCurrency1=_defaultCurrency1_&amp;defaultCurrency2=_defaultCurrency2_" />
 
     <!-- Define properties in the Properties element.
          Remember to put Property Name on the Src attribute of the Content element above. -->
     <Properties>
+      <Property Name="defaultCurrency1"
+                Type="enum"
+                RequiresDesignerPermission="true"
+                WebCategory="Currency setting left"
+                WebDisplayName="Choose default currency"
+                DefaultValue="EUR"
+                >
+        <EnumItems>
+          <EnumItem WebDisplayName="EUR" Value="EUR"/>
+          <EnumItem WebDisplayName="GBP" Value="GBP"/>
+          <EnumItem WebDisplayName="SEK" Value="SEK"/>
+          <EnumItem WebDisplayName="JPY" Value="JPY"/>
+          <EnumItem WebDisplayName="AUD" Value="AUD"/>
+          <EnumItem WebDisplayName="NOK" Value="NOK"/>
+          <EnumItem WebDisplayName="DKK" Value="DKK"/>
+        </EnumItems>
+      </Property>
+      <Property Name="defaultCurrency2"
+                Type="enum"
+                RequiresDesignerPermission="true"
+                WebCategory="Currency setting right"
+                WebDisplayName=" Choose default currency"
+                DefaultValue="SEK"
+                >
+        <EnumItems>
+          <EnumItem WebDisplayName="EUR" Value="EUR"/>
+          <EnumItem WebDisplayName="GBP" Value="GBP"/>
+          <EnumItem WebDisplayName="SEK" Value="SEK"/>
+          <EnumItem WebDisplayName="JPY" Value="JPY"/>
+          <EnumItem WebDisplayName="AUD" Value="AUD"/>
+          <EnumItem WebDisplayName="NOK" Value="NOK"/>
+          <EnumItem WebDisplayName="DKK" Value="DKK"/>
+        </EnumItems>
+      </Property>
+      
     </Properties>
 
   </ClientWebPart>
