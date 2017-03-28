@@ -14,13 +14,13 @@
     <script src="../Scripts/Chart.min.js"></script>
     <script src="../Scripts/moment.min.js"></script>
     <script src="../Scripts/moment-with-locales.min.js"></script>
-    <script src="http://openexchangerates.github.io/money.js/money.min.js"></script>
+    <script src="https://openexchangerates.github.io/money.js/money.min.js"></script>
 	<script src="../Scripts/App.js"></script>
     <link href="../Content/flag-icon.min.css" rel="stylesheet" />
 
-    <%--<script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
+    <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
-    <script type="text/javascript" src="/_layouts/15/sp.js"></script>--%>
+    <script type="text/javascript" src="/_layouts/15/sp.js"></script>
 
 	<link href="../Content/bootstrap.min.css" rel="stylesheet" />
 	<link href="../Content/App.css" rel="stylesheet" />
