@@ -140,75 +140,7 @@ $(document).ready(function () {
                 //$('#clientusdeur').append(" " + eurIcon + " EUR");
                 //$('#clientusdsek').prepend(usdIcon + " USD ");
                 //$('#clientusdsek').append(" " + sekIcon + " SEK");
-
-                // rates to the table
-                // USD row
-                $('#usdEur').html(rate.rates.EUR);
-                $('#usdGbp').html(rate.rates.GBP);
-                $('#usdSek').html(rate.rates.SEK);
-                $('#usdJpy').html(rate.rates.JPY);
-                $('#usdAud').html(rate.rates.AUD);
-                $('#usdNok').html(rate.rates.NOK);
-                $('#usdDkk').html(rate.rates.DKK);
-                // EUR row
-                $('#eurUsd').html(rate.rates.USD);
-                $('#eurGbp').html(rate.rates.GBP);
-                $('#eurSek').html(rate.rates.SEK);
-                $('#eurJpy').html(rate.rates.JPY);
-                $('#eurAud').html(rate.rates.AUD);
-                $('#eurNok').html(rate.rates.NOK);
-                $('#eurDkk').html(rate.rates.DKK);
-                // GBP row
-                $('#gbpUsd').html(rate.rates.USD);
-                $('#gbpEur').html(rate.rates.EUR);
-                $('#gbpSek').html(rate.rates.SEK);
-                $('#gbpJpy').html(rate.rates.JPY);
-                $('#gbpAud').html(rate.rates.AUD);
-                $('#gbpNok').html(rate.rates.NOK);
-                $('#gbpDkk').html(rate.rates.DKK);
-                // SEK row
-                $('#sekUsd').html(rate.rates.USD);
-                $('#sekEur').html(rate.rates.EUR);
-                $('#sekGbp').html(rate.rates.GBP);
-                $('#sekJpy').html(rate.rates.JPY);
-                $('#sekAud').html(rate.rates.AUD);
-                $('#sekNok').html(rate.rates.NOK);
-                $('#sekDkk').html(rate.rates.DKK);
-                // JPY row
-                $('#jpyUsd').html(rate.rates.USD);
-                $('#jpyEur').html(rate.rates.EUR);
-                $('#jpyGbp').html(rate.rates.GBP);
-                $('#jpySek').html(rate.rates.SEK);
-                $('#jpyAud').html(rate.rates.AUD);
-                $('#jpyNok').html(rate.rates.NOK);
-                $('#jpyDkk').html(rate.rates.DKK);
-                // AUD row
-                $('#audUsd').html(rate.rates.USD);
-                $('#audEur').html(rate.rates.EUR);
-                $('#audGbp').html(rate.rates.GBP);
-                $('#audSek').html(rate.rates.SEK);
-                $('#audJpy').html(rate.rates.JPY);
-                $('#audNok').html(rate.rates.NOK);
-                $('#audDkk').html(rate.rates.DKK);
-                // NOK row
-                $('#nokUsd').html(rate.rates.USD);
-                $('#nokEur').html(rate.rates.EUR);
-                $('#nokGbp').html(rate.rates.GBP);
-                $('#nokSek').html(rate.rates.SEK);
-                $('#nokJpy').html(rate.rates.JPY);
-                $('#nokAud').html(rate.rates.AUD);
-                $('#nokDkk').html(rate.rates.DKK);
-                // DKK row
-                $('#dkkUsd').html(rate.rates.USD);
-                $('#dkkEur').html(rate.rates.EUR);
-                $('#dkkGbp').html(rate.rates.GBP);
-                $('#dkkSek').html(rate.rates.SEK);
-                $('#dkkJpy').html(rate.rates.JPY);
-                $('#dkkAud').html(rate.rates.AUD);
-                $('#dkkNok').html(rate.rates.NOK);
-                
-                // end of rates to the table
-
+            
                 console.log(rateUSD + rateSEK + rateEUR);
         },
         error: function () {
