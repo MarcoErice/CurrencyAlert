@@ -36,7 +36,7 @@
 				<div class="panel-heading" id="displayMoment">
 					<div id ="date"></div>
 					<div id ="day"></div>
-					<div id="time"></div>
+					
 				</div>
 			</div> 
 
@@ -48,7 +48,7 @@
                     </div>
 				<div class="col-sm-6 text-center" id="xChange2">
                     <div class="well" id="clientusdsek"></div>
-                    				</div>
+                 </div>
 				</div>			    
 			
 			<!--news feed-->
