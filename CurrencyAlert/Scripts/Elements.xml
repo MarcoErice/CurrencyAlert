@@ -8,5 +8,6 @@
     <File Path="Scripts\moment-with-locales.min.js" Url="Scripts/moment-with-locales.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jmoney.min.js" Url="Scripts/jmoney.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\bootstrap.min.js" Url="Scripts/bootstrap.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\money.min.js" Url="Scripts/money.min.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

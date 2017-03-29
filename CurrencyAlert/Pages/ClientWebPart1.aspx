@@ -14,7 +14,7 @@
     <script src="../Scripts/Chart.min.js"></script>
     <script src="../Scripts/moment.min.js"></script>
     <script src="../Scripts/moment-with-locales.min.js"></script>
-    <script src="http://openexchangerates.github.io/money.js/money.min.js"></script>
+    <script src="https://openexchangerates.github.io/money.js/money.min.js"></script>
 	<script src="../Scripts/App.js"></script>
     <link href="../Content/flag-icon.min.css" rel="stylesheet" />
 
