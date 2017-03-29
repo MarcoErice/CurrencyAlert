@@ -2,3 +2,7 @@
 h3.text-center {
 	margin-top: -35px;
 }
+
+thead {
+    background-color:lightgray
+}

@@ -9,7 +9,8 @@
     <script type="text/javascript" src="../Scripts/Chart.min.js"></script>
     <script type="text/javascript" src="../Scripts/moment.min.js"></script>
     <script type="text/javascript" src="../Scripts/moment-with-locales.min.js"></script>
-    <script type="text/javascript" src="http://openexchangerates.github.io/money.js/money.min.js"></script>
+    <script src="../Scripts/money.min.js"></script>
+    <script type="text/javascript" src="https://openexchangerates.github.io/money.js/money.min.js"></script>
      <link href="../Content/flag-icon.min.css" rel="stylesheet" />
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
     <meta name="WebPartPageExpansion" content="full" />
