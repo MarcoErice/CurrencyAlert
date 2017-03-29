@@ -4,5 +4,6 @@
     <ProjectItemFile Source="Elements.xml" Target="Images\" Type="ElementManifest" />
     <ProjectItemFile Source="AppIcon.png" Target="Images\" Type="ElementFile" />
     <ProjectItemFile Source="rateIcon.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="CurrencyIcon.jpg" Target="Images\" Type="ElementFile" />
   </Files>
 </ProjectItem>

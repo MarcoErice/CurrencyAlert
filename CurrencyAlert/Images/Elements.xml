@@ -3,5 +3,6 @@
   <Module Name="Images">
     <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" ReplaceContent="TRUE" />
     <File Path="Images\rateIcon.jpg" Url="Images/rateIcon.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\CurrencyIcon.jpg" Url="Images/CurrencyIcon.jpg" ReplaceContent="TRUE" />
   </Module>
 </Elements>

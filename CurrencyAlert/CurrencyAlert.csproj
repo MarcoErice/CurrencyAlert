@@ -572,9 +572,10 @@
     <Content Include="flags\4x3\zm.svg" />
     <Content Include="flags\4x3\zw.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Images\rateIcon.jpg">
+    <Content Include="Images\CurrencyIcon.jpg">
       <OpcRelationship>manifest-icon</OpcRelationship>
     </Content>
+    <Content Include="Images\rateIcon.jpg" />
     <Content Include="Pages\ClientWebPart1.aspx" />
     <Content Include="Pages\Elements.xml">
       <SubType>Designer</SubType>
