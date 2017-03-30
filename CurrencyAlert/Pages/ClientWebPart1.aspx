@@ -24,18 +24,19 @@
 
 	<link href="../Content/bootstrap.min.css" rel="stylesheet" />
 	<link href="../Content/App.css" rel="stylesheet" />
+	
 
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron col-md-6">
+		<div class="jumbotron col-md-6" id="bgcontainer">
 			<h3 class="text-center">Today's XchangeRate </h3>
 			
 			<!--moment data will be inserted in this section-->
-			<div class="panel panel-success text-center">
+			<div class="panel panel-primary text-center">
 				<div class="panel-heading" id="displayMoment">
-					<div id ="date"></div>
-					<div id ="day"></div>
+					<div id ="date" style="font-size: 24px;"></div>
+					<div id ="day" style="font-size: 24px;"></div>
 				</div>
 			</div> 
 
@@ -51,8 +52,8 @@
 				</div>			    
 			
 			<!--news feed-->
-			<div class="panel panel-success text-center">
-				<div class="panel-heading" id="newsFeed">LATEST NEWS:<br /></div>
+			<div class="panel panel-default text-center">
+				<div class="panel-heading" id="newsFeed"">LATEST NEWS:<br /></div>
 				</div>
 			<div id="errorHandler"></div>
 		</div>

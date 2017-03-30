@@ -1,8 +1,17 @@
 ﻿/* Place custom styles below */
 h3.text-center {
-	margin-top: -35px;
+	margin-top: -20px;
+	font-size: -webkit-xxx-large;
+	font-weight: 700;
 }
 
 thead {
     background-color:lightgray
+}
+
+div#bgcontainer {
+	background: none;
+	border: 1px solid;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px;
 }
