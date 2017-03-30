@@ -11,9 +11,10 @@ function getQueryStringParameter(urlParameterKey) {
     }
 }
 
+// this is for time and date
 $(document).ready(function () {
 
-    moment.locale("sv");
+	moment.locale("sv");
     var currentDate = moment().format('YYYY-MM-DD');
     var currentDay = moment().format('dddd');
     $("#date").html(currentDate);
@@ -27,7 +28,7 @@ $(document).ready(function () {
 });
 
 
-
+// News Feed
     $(document).ready(function () {
         var url = 'https://newsapi.org/v1/articles?source=financial-times&sortBy=top&apiKey=';
         var apiKey = '63e789e202054f3e95c86a32635a28d2';
@@ -59,6 +60,8 @@ $(document).ready(function () {
         });
 });
 
+
+// Money Conversion
 
 $(document).ready(function () {
     var urlxc = 'https://openexchangerates.org/api/latest.json?app_id=';
@@ -142,7 +145,7 @@ $(document).ready(function () {
                 //$('#clientusdsek').prepend(usdIcon + " USD ");
                 //$('#clientusdsek').append(" " + sekIcon + " SEK");
             
-                console.log(rateUSD + rateSEK + rateEUR);
+                //console.log(rateUSD + rateSEK + rateEUR);
         },
         error: function () {
             $('.errorHandler').html('check api key');

@@ -36,7 +36,6 @@
 				<div class="panel-heading" id="displayMoment">
 					<div id ="date"></div>
 					<div id ="day"></div>
-					
 				</div>
 			</div> 
 
