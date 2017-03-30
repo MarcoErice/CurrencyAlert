@@ -11,9 +11,10 @@ function getQueryStringParameter(urlParameterKey) {
     }
 }
 
+// this is for time and date
 $(document).ready(function () {
 
-    moment.locale("sv");
+	moment.locale("sv");
     var currentDate = moment().format('YYYY-MM-DD');
     var currentDay = moment().format('dddd');
     $("#date").html(currentDate);
@@ -27,7 +28,7 @@ $(document).ready(function () {
 });
 
 
-
+// News Feed
     $(document).ready(function () {
         var url = 'https://newsapi.org/v1/articles?source=financial-times&sortBy=top&apiKey=';
         var apiKey = '63e789e202054f3e95c86a32635a28d2';
@@ -60,6 +61,8 @@ $(document).ready(function () {
 });
 
 
+// Money Conversion
+
 $(document).ready(function () {
     var urlxc = 'https://openexchangerates.org/api/latest.json?app_id=';
     var apiKeyxc = '288ae5abeb444453bd3d9ea1a453ba5e';
@@ -73,13 +76,13 @@ $(document).ready(function () {
         success: function (rate) {
 
             var rateUSD = rate.rates.USD;
-            var rateSEK = rate.rates.SEK;
-            var rateEUR = rate.rates.EUR;
-            var rateGBP = rate.rates.GBP;
-            var rateJPY = rate.rates.JPY;
-            var rateAUD = rate.rates.AUD;
-            var rateNOK = rate.rates.NOK;
-            var rateDKK = rate.rates.DKK;
+            var rateSEK = rate.rates.SEK.toFixed(4);
+            var rateEUR = rate.rates.EUR.toFixed(4);
+            var rateGBP = rate.rates.GBP.toFixed(4);
+            var rateJPY = rate.rates.JPY.toFixed(4);
+            var rateAUD = rate.rates.AUD.toFixed(4);
+            var rateNOK = rate.rates.NOK.toFixed(4);
+            var rateDKK = rate.rates.DKK.toFixed(4);
             var usdIcon = '<span class="flag-icon flag-icon-us"></span>';
             var sekIcon = '<span class="flag-icon flag-icon-se"></span>';
             var eurIcon = '<span class="flag-icon flag-icon-eu"></span>';
