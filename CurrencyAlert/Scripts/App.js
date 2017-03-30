@@ -6,7 +6,7 @@ function getQueryStringParameter(urlParameterKey) {
     var strParams = '';
     for (var i = 0; i < params.length; i = i + 1) {
         var singleParam = params[i].split('=');
-        if (singleParam[0] == urlParameterKey)
+        if (singleParam[0] === urlParameterKey)
             return decodeURIComponent(singleParam[1]);
     }
 }
@@ -54,7 +54,7 @@ $(document).ready(function () {
                 console.log(currencyNews);
                 },
             error: function (data) {
-                $('.errorHandler').html('check api key');
+                $('#errorHandler').html('check api key');
                 }
         });
 });
@@ -91,7 +91,7 @@ $(document).ready(function () {
             var adefaultCurrency1 = getQueryStringParameter('adefaultCurrency1');
             var bdefaultCurrency2 = getQueryStringParameter('bdefaultCurrency2');
 
-                // Do something based on incoming param values
+                // code for changing default values
                 if (adefaultCurrency1 === "SEK") {
                     $("#clientusdeur").html(usdIcon + " USD " + " " + rateUSD + " = " + rateSEK + " " + sekIcon + " SEK");
                 };
@@ -134,18 +134,11 @@ $(document).ready(function () {
                 if (bdefaultCurrency2 === "DKK") {
                     $("#clientusdsek").html(usdIcon + " USD " + " " + rateUSD + " = " + rateDKK + " " + dkkIcon + " DKK");
                 };
-
-                //$('#clientusdeur').html(rateUSD + " / " + rateEUR);
-                //$('#clientusdsek').html(rateUSD + " / " + rateSEK);
-                //$('#clientusdeur').prepend(usdIcon + " USD ");
-                //$('#clientusdeur').append(" " + eurIcon + " EUR");
-                //$('#clientusdsek').prepend(usdIcon + " USD ");
-                //$('#clientusdsek').append(" " + sekIcon + " SEK");
-            
+                    
                 console.log(rateUSD + rateSEK + rateEUR);
         },
         error: function () {
-            $('.errorHandler').html('check api key');
+            $('#errorHandler').html('check api key');
         }
     });
     });
