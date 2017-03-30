@@ -76,13 +76,13 @@ $(document).ready(function () {
         success: function (rate) {
 
             var rateUSD = rate.rates.USD;
-            var rateSEK = rate.rates.SEK;
-            var rateEUR = rate.rates.EUR;
-            var rateGBP = rate.rates.GBP;
-            var rateJPY = rate.rates.JPY;
-            var rateAUD = rate.rates.AUD;
-            var rateNOK = rate.rates.NOK;
-            var rateDKK = rate.rates.DKK;
+            var rateSEK = rate.rates.SEK.toFixed(4);
+            var rateEUR = rate.rates.EUR.toFixed(4);
+            var rateGBP = rate.rates.GBP.toFixed(4);
+            var rateJPY = rate.rates.JPY.toFixed(4);
+            var rateAUD = rate.rates.AUD.toFixed(4);
+            var rateNOK = rate.rates.NOK.toFixed(4);
+            var rateDKK = rate.rates.DKK.toFixed(4);
             var usdIcon = '<span class="flag-icon flag-icon-us"></span>';
             var sekIcon = '<span class="flag-icon flag-icon-se"></span>';
             var eurIcon = '<span class="flag-icon flag-icon-eu"></span>';
@@ -95,46 +95,46 @@ $(document).ready(function () {
             var bdefaultCurrency2 = getQueryStringParameter('bdefaultCurrency2');
 
                 // Do something based on incoming param values
-                if (defaultCurrency1 === "SEK") {
+                if (adefaultCurrency1 === "SEK") {
                     $("#clientusdeur").html(usdIcon + " USD " + " " + rateUSD + " = " + rateSEK + " " + sekIcon + " SEK");
                 };
-                if (defaultCurrency1 === "EUR") {
+                if (adefaultCurrency1 === "EUR") {
                     $("#clientusdeur").html(usdIcon + " USD " + " " + rateUSD + " = " + rateEUR + " " + eurIcon + " EUR");
                 };
-                if (defaultCurrency1 === "GBP") {
+                if (adefaultCurrency1 === "GBP") {
                     $("#clientusdeur").html(usdIcon + " USD " + " " + rateUSD + " = " + rateGBP + " " + gbpIcon + " GBP");
                 };
-                if (defaultCurrency1 === "JPY") {
+                if (adefaultCurrency1 === "JPY") {
                     $("#clientusdeur").html(usdIcon + " USD " + " " + rateUSD + " = " + jpyIcon + " " + rateJPY + " JPY");
                  };
-                if (defaultCurrency1 === "AUD") {
+                 if (adefaultCurrency1 === "AUD") {
                     $("#clientusdeur").html(usdIcon + " USD " + " " + rateUSD + " = " + rateAUD + " " + audIcon + " AUD");
                 };
-                if (defaultCurrency1 === "NOK") {
+                if (adefaultCurrency1 === "NOK") {
                     $("#clientusdeur").html(usdIcon + " USD " + " " + rateUSD + " = " + rateNOK + " " + nokIcon + " NOK");
                 };
-                if (defaultCurrency1 === "DKK") {
+                if (adefaultCurrency1 === "DKK") {
                     $("#clientusdeur").html(usdIcon + " USD " + " " + rateUSD + " = " + rateDKK + " " + dkkIcon + " DKK");
                 };
-                if (defaultCurrency2 === "SEK") {
+                if (bdefaultCurrency2 === "SEK") {
                     $("#clientusdsek").html(usdIcon + " USD " + " " + rateUSD + " = " + rateSEK + " " + sekIcon + " SEK");
                 };
-                if (defaultCurrency2 === "EUR") {
+                if (bdefaultCurrency2 === "EUR") {
                     $("#clientusdsek").html(usdIcon + " USD " + " " + rateUSD + " = " + rateEUR + " " + eurIcon + " EUR");
                 };
-                if (defaultCurrency2 === "GBP") {
+                if (bdefaultCurrency2 === "GBP") {
                     $("#clientusdsek").html(usdIcon + " USD " + " " + rateUSD + " = " + rateGBP + " " + gbpIcon + " GBP");
                 };
-                if (defaultCurrency2 === "JPY") {
+                if (bdefaultCurrency2 === "JPY") {
                     $("#clientusdsek").html(usdIcon + " USD " + " " + rateUSD + " = " + rateJPY + " " + jpyIcon + " JPY");
                    };
-                if (defaultCurrency2 === "AUD") {
+                   if (bdefaultCurrency2 === "AUD") {
                     $("#clientusdsek").html(usdIcon + " USD " + " " + rateUSD + " = " + rateAUD + " " + audIcon + " AUD");
                 };
-                if (defaultCurrency2 === "NOK") {
+                if (bdefaultCurrency2 === "NOK") {
                     $("#clientusdsek").html(usdIcon + " USD " + " " + rateUSD + " = " + rateNOK + " " + nokIcon + " NOK");
                 };
-                if (defaultCurrency2 === "DKK") {
+                if (bdefaultCurrency2 === "DKK") {
                     $("#clientusdsek").html(usdIcon + " USD " + " " + rateUSD + " = " + rateDKK + " " + dkkIcon + " DKK");
                 };
 
