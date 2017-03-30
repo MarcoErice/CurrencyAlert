@@ -73,13 +73,13 @@ $(document).ready(function () {
         success: function (rate) {
 
             var rateUSD = rate.rates.USD;
-            var rateSEK = rate.rates.SEK;
-            var rateEUR = rate.rates.EUR;
-            var rateGBP = rate.rates.GBP;
-            var rateJPY = rate.rates.JPY;
-            var rateAUD = rate.rates.AUD;
-            var rateNOK = rate.rates.NOK;
-            var rateDKK = rate.rates.DKK;
+            var rateSEK = rate.rates.SEK.toFixed(4);
+            var rateEUR = rate.rates.EUR.toFixed(4);
+            var rateGBP = rate.rates.GBP.toFixed(4);
+            var rateJPY = rate.rates.JPY.toFixed(4);
+            var rateAUD = rate.rates.AUD.toFixed(4);
+            var rateNOK = rate.rates.NOK.toFixed(4);
+            var rateDKK = rate.rates.DKK.toFixed(4);
             var usdIcon = '<span class="flag-icon flag-icon-us"></span>';
             var sekIcon = '<span class="flag-icon flag-icon-se"></span>';
             var eurIcon = '<span class="flag-icon flag-icon-eu"></span>';
