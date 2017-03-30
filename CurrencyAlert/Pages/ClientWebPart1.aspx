@@ -30,7 +30,7 @@
 <body>
 	<div class="container">
 		<div class="jumbotron col-md-6" id="bgcontainer">
-			<h3 class="text-center">Today's XchangeRate </h3>
+			<h3 class="text-center">Today's Xchange Rate </h3>
 			
 			<!--moment data will be inserted in this section-->
 			<div class="panel panel-primary text-center">
