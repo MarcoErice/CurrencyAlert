@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../Scripts/Chart.min.js"></script>
     <script type="text/javascript" src="../Scripts/moment.min.js"></script>
     <script type="text/javascript" src="../Scripts/moment-with-locales.min.js"></script>
-    <script src="../Scripts/money.min.js"></script>
+    <script type="text/javascript" src="../Scripts/money.min.js"></script>
     <script type="text/javascript" src="https://openexchangerates.github.io/money.js/money.min.js"></script>
      <link href="../Content/flag-icon.min.css" rel="stylesheet" />
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
@@ -30,7 +30,7 @@
 <div class="container">
 <div class="row">
 	<table class="table table-bordered table-hover">
-		<thead>
+		
 			<th>#</th>
 			<th class="text-center">USD <span class="flag-icon flag-icon-us flag-icon-squared"></span></th>
 			<th class="text-center">EUR <span class="flag-icon flag-icon-eu flag-icon-squared"></span></th>
@@ -40,7 +40,7 @@
 			<th class="text-center">AUD <span class="flag-icon flag-icon-au flag-icon-squared"></span></th>
 			<th class="text-center">NOK <span class="flag-icon flag-icon-no flag-icon-squared"></span></th>
 			<th class="text-center">DKK <span class="flag-icon flag-icon-dk flag-icon-squared"></span></th>
-		</thead>
+		
 <tbody class="text-center">
 <tr>
 	<th scope="row">1 USD <span class="flag-icon flag-icon-us flag-icon-squared"></span></th>
