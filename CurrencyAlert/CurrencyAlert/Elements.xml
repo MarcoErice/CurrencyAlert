@@ -46,7 +46,6 @@
           <EnumItem WebDisplayName="DKK" Value="DKK"/>
         </EnumItems>
       </Property>
-      
     </Properties>
 
   </ClientWebPart>
